@@ -22,6 +22,7 @@ https://simple-task-management-system.web.app
 - axios
 - firebase
 - react
+- react-beautiful-dnd
 - react-dom
 - react-helmet-async
 - react-hot-toast

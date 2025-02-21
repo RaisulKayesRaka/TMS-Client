@@ -11,14 +11,14 @@ import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
 import useAuth from "./hooks/useAuth";
 import Loading from "./components/Loading";
-import App from "./pages/App";
+import Layout from "./Layout";
 
 const queryClient = new QueryClient();
 
 const ConditionalRoute = () => {
   const { user, loading } = useAuth();
   if (loading) return <Loading />;
-  return user ? <App /> : <Login />;
+  return user ? <Layout /> : <Login />;
 };
 
 // Define Routes
