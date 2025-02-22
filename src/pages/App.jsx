@@ -97,25 +97,22 @@ const App = () => {
 
   return (
     <div className="flex min-h-screen flex-col items-center bg-gray-100 p-10 dark:bg-gray-900">
-      <h1 className="mb-6 text-3xl font-bold text-black dark:text-white">
-        📝 Drag & Drop Todo List
-      </h1>
-      <div className="mb-6 flex gap-3">
+      <div className="mb-6 flex w-full max-w-4xl flex-col gap-3 sm:flex-row">
         <input
           type="text"
           value={newTitle}
           onChange={(e) => setNewTitle(e.target.value)}
-          placeholder="Task title (max 50 chars)"
+          placeholder="Task title"
           maxLength={50}
-          className="w-64 rounded-md border p-2 dark:bg-gray-800 dark:text-white"
+          className="w-full rounded-md border p-2 dark:bg-gray-800 dark:text-white"
         />
         <input
           type="text"
           value={newDescription}
           onChange={(e) => setNewDescription(e.target.value)}
-          placeholder="Task description (max 200 chars)"
+          placeholder="Task description"
           maxLength={200}
-          className="w-64 rounded-md border p-2 dark:bg-gray-800 dark:text-white"
+          className="w-full rounded-md border p-2 dark:bg-gray-800 dark:text-white"
         />
         <select
           value={selectedCategory}
