@@ -80,12 +80,12 @@ export default function Navbar() {
                 >
                   <p className="px-4 py-3 font-semibold">{user?.displayName}</p>
                   <hr className="dark:border-gray-700" />
-                  <Link
+                  {/* <Link
                     to="/activity-log"
                     className="mt-2 px-4 py-2 hover:bg-gray-50 focus:scale-95 dark:hover:bg-gray-900"
                   >
                     Activity Log
-                  </Link>
+                  </Link> */}
                   <button
                     onClick={logOut}
                     className="px-4 py-2 text-left hover:bg-gray-50 focus:scale-95 dark:hover:bg-gray-900"
